@@ -1,0 +1,58 @@
+.shopsMap {
+    padding: 0 w(50px);
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.shopsMap__block {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.shopsMap__block:nth-child(1) {
+    margin-right: (25px);
+}
+
+.shopsMap__block:nth-child(2) {
+    filter: grayscale(1);
+}
+
+.shopsMap__ul:nth-child(1) {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.shopsMap__ul {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.shopsMap__li {
+    height: 100%;
+}
+
+
+#map {
+    width: 100% !important;
+    height: w(236px) !important;
+}
+
+#map {
+    ymaps {
+        border-radius: w(4px) !important;
+    }
+
+    .ymaps-2-1-79-image {
+        border-radius: 0 !important;
+        width: w(37px) !important;
+        height: w(35px) !important;
+        background-size: 100% 100% !important;
+    }
+
+}
+
+.ymaps-2-1-79-copyright {
+    display: none !important;
+}

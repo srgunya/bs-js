@@ -1,0 +1,77 @@
+.partButs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: w(93px);
+}
+
+.partBut {
+    width: 32.2%;
+    border: w(1.6px) solid rgba(0, 0, 0, 0.05);
+    border-radius: w(4px);
+    cursor: pointer;
+    transition: border .3s ease;
+    margin-bottom: w(25px);
+
+    &:hover {
+        outline: w(1.6px) solid black;
+
+        .partBut__img {
+            opacity: .8;
+        }
+    }
+}
+
+.partBut__text {
+    padding: w(24px);
+    height: w(140px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.partBut__h1 {
+    font-weight: 300;
+    font-size: w(18px);
+}
+
+.partBut__p {
+    line-height: w(20px);
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.partBut__img {
+    width: 100%;
+    height: w(265px);
+    background-size: cover;
+    border-radius: w(4px);
+    transition: opacity .3s ease;
+}
+
+.part__img_tin {
+    background-image: url(../../img/partners/dolyame_x3.jpg)
+}
+
+.part__img_tin2 {
+    background-image: url(../../img/partners/tinkoff_x3.jpg)
+}
+
+.part__img_ya {
+    background-image: url(../../img/partners/yaPay_x3.jpg)
+}
+
+.part__img_ha {
+    background-image: url(../../img/partners/halva_x3.jpg)
+}
+
+.part__img_sber {
+    background-image: url(../../img/partners/sberpay_x3.jpg)
+}
+
+.part__img_sbp {
+    background-image: url(../../img/partners/sbp_x3.jpg)
+}
+
+.part__img_cha {
+    background-image: url(../../img/partners/chastyami_x3.jpg)
+}

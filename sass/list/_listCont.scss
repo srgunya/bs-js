@@ -1,0 +1,20 @@
+.listCont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 w(50px);
+}
+
+.listWrap {
+    padding-top: w(30px);
+    padding-bottom: w(70px);
+}
+
+body {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+footer {
+    background-color: white;
+}

@@ -1,0 +1,22 @@
+.itemBody {
+    padding: 0 w(50px);
+    margin-top: w(107px);
+    padding-top: w(90px);
+    padding-bottom: w(70px);
+    position: relative;
+}
+
+.itemCont {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background-color: white;
+}

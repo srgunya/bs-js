@@ -1,0 +1,39 @@
+.contactTop {
+    margin-top: w(130px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 0 w(50px);
+}
+
+.contactTop__ul {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.contactTop__h1 {
+    font-weight: 300;
+    margin-bottom: w(16px);
+}
+
+.contactTop__link {
+    font-size: w(18px);
+    width: 0.01%;
+}
+
+.contactTop__link_margin-16 {
+    margin-bottom: w(16px);
+}
+
+.contactTop__link_mini {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: w(14px);
+    margin-top: w(10px);
+}
+
+.contactTop__p_mini {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: w(12px);
+    margin-bottom: w(48px);
+}

@@ -1,0 +1,103 @@
+.loya {
+    margin-top: w(130px);
+    padding: 0 w(50px);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.loya__h1 {
+    font-weight: 300;
+    font-size: w(24px);
+    margin-bottom: w(48px);
+}
+
+.loya__cont:nth-child(1) {
+    padding-bottom: w(72px);
+    border-bottom: w(1px) solid rgba(0, 0, 0, .1);
+}
+
+.loya__block {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.loya__img {
+    min-width: w(584px);
+    min-height: w(584px);
+    background-size: cover;
+    border-radius: w(4px);
+}
+
+.loya__img_one {
+    background-image: url(../../img/loyalnost/brandshop-card_x2.jpg);
+}
+
+.loya__img_two {
+    background-image: url(../../img/loyalnost/birthday-bs_x2.jpg);
+}
+
+.loya__text {
+    margin-left: w(24px);
+    padding: 0 w(175px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.loya__h2 {
+    font-weight: 300;
+    font-size: w(18px);
+    margin-bottom: w(24px);
+}
+
+.loya__p {
+    margin-bottom: w(24px);
+    line-height: w(20px);
+}
+
+.loya__p:last-child {
+    margin-bottom: 0;
+}
+
+.loya__p_color-grey {
+    color: rgba(0, 0, 0, .4);
+}
+
+.loya__cont:nth-child(2) {
+    padding-top: w(72px);
+
+    .loya__img {
+        order: 2;
+    }
+
+    .loya__text {
+        order: 1;
+    }
+}
+
+.loyaBut {
+    padding: 0 w(20px);
+    width: w(400px);
+    height: w(48px);
+    background-color: rgba(0, 0, 0, .05);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: w(4px);
+    margin-top: w(70px);
+    margin-bottom: w(70px);
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.11);
+    }
+}
+
+.loyaBut__img {
+    width: w(17px);
+    height: w(17px);
+    background-size: cover;
+    background-image: url(../../img/slider/right.png)
+}

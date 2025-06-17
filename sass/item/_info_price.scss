@@ -1,0 +1,41 @@
+.info_price_new {
+    font-size: w(22px);
+    text-align: center;
+    margin: w(12px) 0;
+}
+
+.infoPrice {
+
+    .info_price_old,
+    pre,
+    .info_price_proc {
+        display: none;
+    }
+}
+
+.infoPrice_sale {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: w(12px);
+
+    .info_price_old {
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, 0.4);
+        font-size: w(14px);
+    }
+
+    .info_price_new {
+        width: 100%;
+        color: #ed352c;
+        font-size: w(20px);
+    }
+
+    .info_price_proc,
+    pre,
+    .info_price_new,
+    .info_price_old {
+        display: block;
+    }
+}

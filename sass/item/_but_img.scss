@@ -1,0 +1,39 @@
+.butImg {
+    display: flex;
+    flex-flow: column nowrap;
+    position: sticky;
+    top: w(127px);
+}
+
+.butImg__img {
+    width: w(48px);
+    height: w(48px);
+    border-radius: w(4px);
+    margin-bottom: w(20px);
+    background-image: url(../../img/data/adidas/%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BA1.jpg);
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+}
+
+.butImg__img:last-child {
+    margin-bottom: 0;
+}
+
+.butImg__img_shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: w(4px);
+    transition: opacity .8s ease;
+    opacity: 0;
+}
+
+.butImg__img_active {
+    .butImg__img_shadow {
+        opacity: 1;
+    }
+}

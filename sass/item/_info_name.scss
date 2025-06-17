@@ -1,0 +1,21 @@
+.info__name {
+    font-size: w(24px);
+    font-weight: 300;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-bottom: w(10px);
+
+}
+
+.typeModel {
+    text-align: center;
+    margin-bottom: w(25px);
+}
+
+.typeModel__type,
+.typeModel__model {
+    color: rgba(0, 0, 0, 0.4);
+    line-height: w(20px);
+    display: inline;
+}

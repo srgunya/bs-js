@@ -1,0 +1,111 @@
+.blog {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 w(50px);
+    width: 100%;
+    margin-top: w(64px);
+}
+
+.blogCont__row {
+    display: flex;
+    margin: 0 w(-12.5px)
+}
+
+.blogCont {
+    margin: 0 w(12.5px);
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.blogCont_size-big {
+    width: 100%;
+    margin-bottom: w(25px);
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.blogCont__img {
+    width: 100%;
+    height: w(336px);
+    border-radius: w(4px);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        .blogCont__shadow {
+            opacity: .2;
+        }
+    }
+}
+
+.blogCont__img_img-one {
+    width: 78.5%;
+    height: w(534px);
+    background-image: url(../../img/index/blog1.jpg);
+}
+
+.blogCont__img_img-two {
+    background-image: url(../../img/index/blog2.jpg);
+}
+
+.blogCont__img_img-three {
+    background-image: url(../../img/index/blog3.jpg);
+}
+
+.blogCont__img_img-four {
+    background-image: url(../../img/index/blog4.jpg);
+}
+
+.blogCont__img_img-five {
+    background-image: url(../../img/index/blog5.jpg);
+}
+
+.blogCont__ul {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: w(20px) w(10px) 0;
+    align-items: flex-start;
+}
+
+.blogCont__ul_float-r {
+    width: 25%;
+    margin-left: w(25px);
+    padding: 0;
+}
+
+.blogCont__li_margin-top-bot {
+    margin: w(10px) 0;
+}
+
+.blogCont__link {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, .4);
+    letter-spacing: w(1.6px);
+    font-size: w(12px);
+    border-bottom: 1px solid black;
+    transition: color .3s ease, width .3s ease;
+    cursor: pointer;
+    display: flex;
+    width: 0%;
+    white-space: nowrap;
+
+    &:hover {
+        color: black;
+        width: 100%;
+    }
+}
+
+.blogCont__link_color-black {
+    color: black;
+}
+
+.blogCont__span {
+    font-size: w(18px);
+    cursor: text;
+    line-height: w(25px);
+}

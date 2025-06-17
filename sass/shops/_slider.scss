@@ -1,0 +1,28 @@
+.shopsSlider {
+    padding: 0 w(50px);
+    margin-top: w(48px);
+    margin-bottom: w(94px);
+}
+
+.slider__img {
+    width: 100%;
+    height: w(885px);
+    background-size: cover;
+    border-radius: w(4px);
+}
+
+.owl-dot {
+    width: w(40px);
+    height: w(40px);
+    background-size: cover !important;
+    border-radius: w(4px);
+    margin: 0 w(10px);
+}
+
+.owl-dots {
+    margin-top: w(20px);
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}

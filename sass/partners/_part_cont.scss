@@ -1,0 +1,48 @@
+.partBody {
+    margin-top: w(130px);
+    padding: 0 w(50px);
+}
+
+.partCont {
+    display: none;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.partCont__img {
+    width: w(548px);
+    height: w(320px);
+    background-size: cover;
+}
+
+.partCont__text {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 60%;
+}
+
+.partCont__h1 {
+    font-weight: 300;
+    font-size: w(18px);
+    margin-bottom: w(24px);
+    width: w(436px);
+}
+
+.partCont__p {
+    line-height: w(20px);
+    margin-bottom: w(24px);
+    width: w(436px);
+}
+
+.partCont__li {
+    line-height: w(20px);
+    width: w(436px);
+}
+
+.partCont__h2 {
+    font-size: w(24px);
+    margin-bottom: w(48px);
+    margin-top: w(72px);
+    font-weight: 300;
+}

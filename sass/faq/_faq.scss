@@ -1,0 +1,98 @@
+.faqBody {
+    padding: 0 w(50px) w(70px);
+    margin-top: w(130px);
+}
+
+.faq__cont {
+    width: 100%;
+    border: w(1px) solid rgba(0, 0, 0, .1);
+    border-radius: w(4px);
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.faq__row {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+}
+
+.faq__block {
+    width: 100%;
+    padding: w(40px);
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .05);
+    }
+}
+
+.faq__h1 {
+    margin-bottom: w(24px);
+    font-size: w(24px);
+    font-weight: 300;
+
+}
+
+.faq__p {
+    color: rgba(0, 0, 0, 0.4);
+    line-height: w(20px);
+}
+
+.faq__img {
+    width: w(36px);
+    height: w(36px);
+    background-size: 100% 100%;
+    margin-bottom: w(16px);
+}
+
+.faq__row:nth-child(1) {
+    border-bottom: w(1px) solid rgba(0, 0, 0, .1);
+
+    .faq__block:nth-child(1) {
+        border-right: w(1px) solid rgba(0, 0, 0, .1);
+
+        .faq__img {
+            background-image: url(../../img/faq/order.svg);
+        }
+    }
+
+    .faq__block:nth-child(2) {
+        border-right: w(1px) solid rgba(0, 0, 0, .1);
+
+        .faq__img {
+            background-image: url(../../img/faq/shipping.svg);
+        }
+    }
+
+    .faq__block:nth-child(3) {
+        .faq__img {
+            background-image: url(../../img/faq/exchange.svg);
+        }
+    }
+}
+
+.faq__row:nth-child(2) {
+    .faq__block:nth-child(1) {
+        border-right: w(1px) solid rgba(0, 0, 0, .1);
+
+        .faq__img {
+            background-image: url(../../img/faq/products.svg);
+        }
+    }
+
+    .faq__block:nth-child(2) {
+        border-right: w(1px) solid rgba(0, 0, 0, .1);
+
+        .faq__img {
+            background-image: url(../../img/faq/discount.svg);
+        }
+    }
+
+    .faq__block:nth-child(3) {
+        .faq__img {
+            background-image: url(../../img/faq/store.svg);
+        }
+    }
+}

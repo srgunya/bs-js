@@ -1,0 +1,341 @@
+.basket {
+    border-radius: w(4px);
+    width: w(378px);
+    padding: 0 w(24px) w(24px);
+    position: fixed;
+    top: w(120px);
+    right: w(100px);
+    background-color: white;
+    z-index: 6;
+    box-shadow: w(0px) w(6px) w(30px) w(10px) rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity .2s ease, top .2s ease;
+}
+
+.basket_anim {
+    top: w(100px);
+    opacity: 1;
+}
+
+.basketHide {
+    height: w(300px);
+}
+
+.basketHide__zagl {
+    font-weight: 300;
+    font-size: w(18px);
+    margin-top: w(22px);
+    text-align: center;
+
+}
+
+.basketHide__text {
+    color: rgba(0, 0, 0, .4);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    line-height: w(20px);
+
+}
+
+.basketHide__new_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: w(75px);
+    left: 0;
+}
+
+.basketHide__new {
+    width: w(170px);
+    height: w(48px);
+    border-radius: w(4px);
+    background-color: rgba(0, 0, 0, .05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.basketList__head {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: w(12px) 0;
+    height: w(64px);
+}
+
+.basketList__head_block {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    line-height: w(20px);
+}
+
+.basketList__zagl {
+    font-weight: 300;
+
+}
+
+.basketList__col {
+    color: rgba(0, 0, 0, .4);
+}
+
+.basketList__trash {
+    width: w(27px);
+    height: w(27px);
+    background-image: url(../../img/basket/trash.png);
+    background-size: cover;
+    cursor: pointer;
+    transition: opacity .2s ease;
+    position: absolute;
+    right: w(36px);
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.basketList {
+    max-height: w(297px);
+    overflow-y: auto;
+    margin-right: w(-24px);
+    padding-right: w(24px);
+    padding-bottom: w(16px);
+
+    &::-webkit-scrollbar {
+        width: w(2px);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: black;
+    }
+}
+
+.basketItem {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: w(32px);
+}
+
+.basketItem:nth-child(2) {
+    padding-top: w(24px);
+}
+
+.basketItem:last-child {
+    margin-bottom: 0;
+}
+
+.basketItem__img {
+    min-width: w(50px);
+    height: w(50px);
+    background-image: url(../../img/data/adidas/%D0%B0%D0%BD%D0%BE%D1%80%D0%B0%D0%BA1.jpg);
+    background-size: cover;
+    border-radius: w(4px);
+    cursor: pointer;
+}
+
+.basketItem__text {
+    margin-left: w(16px);
+    margin-right: w(20px);
+}
+
+.basketItem__typeModel {
+    margin-top: w(8px);
+    color: rgba(0, 0, 0, .4);
+
+    span {
+        font-size: w(12px);
+    }
+
+}
+
+.basketItem__price {
+
+    .basketItem__price_new,
+    .basketItem__price_old {
+        height: w(24px);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    .basketItem__price_new {
+        font-size: w(18px);
+    }
+
+    .basketItem__price_old {
+        display: none;
+    }
+}
+
+.basketItem__price_sale {
+    .basketItem__price_new {
+        color: #ed352c;
+    }
+
+    .basketItem__price_old {
+        display: flex;
+        text-decoration: line-through;
+        color: rgba(0, 0, 0, .4);
+        font-size: w(14px);
+    }
+}
+
+.basketItemBut {
+    display: flex;
+    align-items: center;
+    margin-top: w(8px);
+}
+
+.basketItemBut__but {
+    width: w(32px);
+    height: w(32px);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .05);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+}
+
+.basketItemBut__img {
+    width: w(13px);
+    height: w(13px);
+    background-size: cover
+}
+
+.basketItemBut__img_minus {
+    background-image: url(../../img/basket/minus.png)
+}
+
+.basketItemBut__img_plus {
+    background-image: url(../../img/basket/plus.png)
+}
+
+.basketItemBut__num {
+    margin: 0 w(16px);
+}
+
+.basketItemBut__size {
+    margin-left: w(16px);
+    color: rgba(0, 0, 0, .4);
+}
+
+.basketButs {
+    padding-top: w(8px);
+}
+
+.basketButs__but {
+    width: 100%;
+    height: w(48px);
+    border-radius: w(4px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity .3s ease, background-color .3s ease;
+}
+
+.basketButs__but_oform {
+    background-color: black;
+    color: white;
+    margin-bottom: w(8px);
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.basketButs__but_click,
+.basketButs__but_dolya {
+    background-color: rgba(0, 0, 0, .05);
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+}
+
+.basketButs__but_dolya {
+    padding: w(10px);
+    height: w(56px);
+    margin-top: w(24px);
+}
+
+.dolya__text {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.dolya__but {
+    background-color: black;
+    border-radius: w(4px);
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: w(10px);
+    min-width: w(70px);
+    height: 100%;
+}
+
+.dolya__price {
+    color: #a335e6;
+}
+
+.dolya__x,
+.dolya__part {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.dolya__part {
+    font-size: w(10px);
+    margin-top: w(2px);
+}
+
+.basketItem_clone {
+    display: none;
+}
+
+.headerIcon__basket_num,
+.headerIcon__star_num {
+    width: w(20px);
+    height: w(20px);
+    border-radius: 50%;
+    position: absolute;
+    background-color: #f2f2f2;
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: w(10px);
+    border: w(1px) solid white;
+    right: w(5px);
+    bottom: w(5px);
+    transition: color .3s ease, background-color .3s ease;
+}

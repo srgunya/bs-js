@@ -1,0 +1,35 @@
+.image-zoom {
+    display: inline-block;
+    height: max-content;
+    position: relative;
+    cursor: zoom-in;
+}
+
+.image-zoom-block {
+    display: none;
+    width: 25vw;
+    height: 25vw;
+    background-image: var(--image);
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: var(--x) var(--y);
+    position: absolute;
+    left: var(--x);
+    top: var(--y);
+    transform: translateX(calc(var(--x) * -1)) translateY(calc(var(--y) * -1));
+    /*
+    left: var(--new-x);
+    top: var(--new-y);
+    transform: translateX(-50%) translateY(-50%);
+*/
+    z-index: 2;
+    pointer-events: none;
+}
+
+.image-zoom.-active {
+    cursor: zoom-out;
+}
+
+.image-zoom.-enter .image-zoom-block {
+    display: block;
+}

@@ -1,0 +1,108 @@
+.itemBody__shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 7;
+    display: none;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: opacity .3s ease;
+    opacity: 0;
+}
+
+.vozvrat,
+.dostavka {
+    width: w(640px);
+    background-color: white;
+    border-radius: w(4px);
+    padding: w(20px);
+    position: relative;
+    bottom: w(-1000px);
+    transition: bottom .3s ease;
+    display: none;
+}
+
+.dostavka {
+    padding-right: 0;
+}
+
+.dostavka__body {
+    overflow-y: auto;
+    max-height: w(564px);
+
+}
+
+.vozvrat__head,
+.dostavka__head {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: w(36px);
+}
+
+.dostavka__head {
+    padding-right: w(20px);
+}
+
+.vozvrat__close,
+.dostavka__close {
+    width: w(20px);
+    height: w(20px);
+    background-image: url(../../img/contact/close.png);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.dostavka__close {
+    right: w(20px);
+}
+
+.vozvrat__h1,
+.dostavka__h1 {
+    font-weight: 300;
+}
+
+.vozvrat__h2,
+.dostavka__h2 {
+    font-weight: 300;
+    margin-bottom: w(25px);
+    color: rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+}
+
+.vozvrat__p,
+.dostavka__p {
+    margin-bottom: w(25px);
+    line-height: w(20px);
+}
+
+.vozvrat__a,
+.dostavka__a {
+    color: rgba(0, 0, 0, 0.4);
+    transition: color .3s ease;
+
+    &:hover {
+        color: black;
+    }
+}
+
+.dostavka__ul {
+    margin-bottom: w(36px);
+    padding-left: w(12px);
+    padding-right: w(20px);
+}
+
+.dostavka__li {
+    list-style-type: "–";
+    margin-bottom: w(12px);
+    line-height: w(20px);
+    padding-left: w(12px);
+}

@@ -1,0 +1,50 @@
+.starList {
+    margin-top: w(107px);
+    padding-bottom: w(70px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    padding: 0 w(50px);
+    flex-flow: row wrap;
+    z-index: 1;
+    position: relative;
+}
+
+.star__null {
+    margin-top: w(100px);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.star__h1,
+.star__h2 {
+    font-size: w(24px);
+    font-weight: 300;
+    margin-bottom: w(24px);
+    width: 100%;
+    text-align: center;
+}
+
+.star__h2 {
+    margin-top: w(30px);
+}
+
+.star__btn {
+    display: flex;
+    flex-flow: ron nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.05);
+    height: w(48px);
+    border-radius: w(4px);
+    padding: 0 w(20px);
+    cursor: pointer;
+    transition: background-color .3s ease;
+    margin-bottom: w(150px);
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

@@ -1,0 +1,18 @@
+.shopsImg {
+    padding: 0 w(50px);
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+
+.shopsImg__img {
+    width: 100%;
+    height: w(697px);
+    background-image: url(../../img/contact/shop.jpg);
+    background-size: cover;
+    border-radius: w(4px);
+}
+
+.shopsImg__img:nth-child(1) {
+    margin-right: w(25px);
+}

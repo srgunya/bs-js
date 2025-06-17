@@ -1,0 +1,152 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 6;
+}
+
+.headerSale {
+    background-color: rgb(25, 25, 25);
+    width: 100%;
+    height: w(32px);
+    cursor: pointer;
+}
+
+.headerSale__link {
+    color: rgb(232, 68, 36);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: w(12px);
+    letter-spacing: w(1px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerCont {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    padding: 0 w(50px);
+    height: w(75px);
+    position: relative;
+    background-color: white;
+}
+
+.headerLogo {
+    margin-right: w(18px);
+}
+
+.headerLogo__img {
+    width: w(36px);
+    height: w(44px);
+    background-image: url(../../img/header/logo.svg);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.headerNav {
+    height: 100%;
+}
+
+.headerNav__ul {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.headerNav__li {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 w(20px);
+    transition: background-color .3s ease;
+}
+
+.headerNav__li_hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.headerIcon {
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+    right: w(50px);
+}
+
+.headerIcon__block {
+    position: relative;
+    width: w(50px);
+    height: w(50px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: background-color .3s ease;
+    cursor: pointer;
+    border-radius: w(4px);
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .05);
+    }
+}
+
+.headerIcon__block_basket {
+    &:hover {
+        .headerIcon__basket_num {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.headerIcon__block_star {
+    &:hover {
+        .headerIcon__star_num {
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+.headerIcon__img {
+    background-size: 100% 100%;
+}
+
+.headerIcon__block:nth-child(1) {
+    .headerIcon__img {
+        width: w(23px);
+        height: w(23px);
+        background-image: url(../../img/header/star.png);
+    }
+}
+
+.headerIcon__block:nth-child(2) {
+    .headerIcon__img {
+        width: w(26px);
+        height: w(26px);
+        background-image: url(../../img/header/lupa.png);
+    }
+}
+
+.headerIcon__block:nth-child(3) {
+    .headerIcon__img {
+        width: w(23px);
+        height: w(23px);
+        background-image: url(../../img/header/bag.png);
+    }
+}
+
+.headerIcon__block:nth-child(4) {
+    .headerIcon__img {
+        width: w(25px);
+        height: w(25px);
+        background-image: url(../../img/header/user.png);
+    }
+}

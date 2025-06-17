@@ -1,0 +1,25 @@
+.bigImg {
+    display: flex;
+    flex-flow: column nowrap;
+
+    .image-zoom {
+        margin-bottom: w(20px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .image-zoom-block {
+        width: w(400px);
+        height: w(400px);
+    }
+}
+
+.bigImg__img {
+    width: w(641px);
+    height: w(641px);
+    border-radius: w(4px);
+    background-size: cover;
+
+}

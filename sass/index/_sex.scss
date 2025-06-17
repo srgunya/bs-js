@@ -1,0 +1,54 @@
+.sex {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0 w(50px);
+    margin-top: w(130px);
+}
+
+.sex__block {
+    position: relative;
+    cursor: pointer;
+    height: w(744px);
+    width: 100%;
+}
+
+.sex__block:nth-child(1) {
+    margin-right: w(25px);
+}
+
+
+.sex__img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: w(4px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sex__img_bc-men {
+    background-image: url(../../img/index/men_home.jpg)
+}
+
+.sex__img_bc-woomen {
+    background-image: url(../../img/index/women_home.jpg)
+}
+
+.sex__button {
+    margin: 0 0 w(18.5px);
+    width: w(660px);
+    height: w(48px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: w(4px);
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+}
+
+.sex__link {
+    font-size: w(18px);
+}

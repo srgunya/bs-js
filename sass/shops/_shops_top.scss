@@ -1,0 +1,34 @@
+.shopsTop {
+    margin-top: w(130px);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0 w(50px);
+}
+
+.shopsTop__block {
+    width: w(540px);
+}
+
+.shopsTop__h1 {
+    font-weight: 300;
+    font-size: w(18px);
+    margin-bottom: w(24px);
+}
+
+.shopsTop__p:nth-child(2) {
+    margin-bottom: w(24px);
+}
+
+.shopsTop__p {
+    line-height: w(20px);
+}
+
+.shopsTop__link {
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: w(1px) solid rgba(0, 0, 0, 0.4);
+
+    &:hover {
+        border-bottom: 0;
+    }
+}

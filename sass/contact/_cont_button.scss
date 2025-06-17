@@ -1,0 +1,21 @@
+.contactButton {
+    margin-top: w(25px);
+    padding: 0 w(50px);
+}
+
+.contactButton__block {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: w(48px);
+    background-color: rgba(0, 0, 0, .05);
+    border-radius: w(4px);
+    transition: color .3s ease, background-color .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .11);
+    }
+}

@@ -1,0 +1,46 @@
+.alpha__wrap {
+    top: 0;
+    padding: w(130px) w(50px) 0;
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    margin-bottom: w(64px);
+}
+
+.alpha {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 w(20px) w(16px);
+    border-bottom: w(2px) solid rgba(0, 0, 0, .05);
+
+}
+
+.alpha__div {
+    user-select: none;
+    width: w(40px);
+    height: w(40px);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    border-radius: w(4px);
+    text-transform: uppercase;
+    font-size: w(24px);
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .05);
+    }
+}
+
+.alpha__div_hide {
+    opacity: .4;
+    cursor: not-allowed;
+
+    &:hover {
+        background-color: inherit;
+    }
+}

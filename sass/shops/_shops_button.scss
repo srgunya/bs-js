@@ -1,0 +1,39 @@
+.shopsButton {
+    padding: 0 w(50px);
+    display: flex;
+    flex-flow: row nowrap;
+    margin-bottom: w(60px);
+}
+
+.shopsButton__block {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.shopsButton__block:nth-child(1) {
+    margin-right: w(25px);
+}
+
+.shopsButton__h1 {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: w(16px) 0;
+    letter-spacing: w(1.6px);
+}
+
+.shopsButton__button {
+    width: 100%;
+    height: w(48px);
+    border-radius: w(4px);
+    background-color: rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: background-color .3s ease, color .3s ease, opacity .3s ease;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: w(48px);
+    user-select: none;
+}

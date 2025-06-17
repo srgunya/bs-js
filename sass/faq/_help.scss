@@ -1,0 +1,171 @@
+.helpBody {
+    margin-top: w(130px);
+    padding: 0 w(50px) w(70px);
+}
+
+.help__req {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.help__res {
+    transition: height .3s ease;
+    overflow: hidden;
+    position: relative;
+    top: w(32px);
+}
+
+.help__block {
+    border-bottom: w(1px) solid rgba(0, 0, 0, 0.1);
+    margin-bottom: w(32px);
+    padding-bottom: w(32px);
+}
+
+.help__block:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.help__h1 {
+    font-size: w(24px);
+    font-weight: 300;
+    user-select: none;
+    padding-right: w(40px);
+}
+
+.help__h2 {
+    font-weight: 300;
+    margin-bottom: w(12px);
+}
+
+.help__h5 {
+    font-weight: 300;
+    margin-bottom: w(12px);
+    font-size: w(20px);
+}
+
+.help__h3 {
+    margin-bottom: w(24px);
+}
+
+.help__p {
+    margin-bottom: w(24px);
+    line-height: w(25px);
+}
+
+.help__info {
+    margin-bottom: w(24px);
+    line-height: w(25px);
+    color: rgba(0, 0, 0, .7);
+    border: w(1px) solid rgba(0, 0, 0, .1);
+    border-radius: w(4px);
+    padding: w(10px) w(38px) w(10px) w(55px);
+}
+
+.help__info:last-child {
+    margin-bottom: w(32px);
+}
+
+.help__info::before {
+    content: '!';
+    color: white;
+    display: inline-block;
+    text-align: center;
+    line-height: w(25px);
+    font-size: w(16px);
+    width: w(25px);
+    height: w(25px);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    margin-left: w(-40px);
+    margin-right: w(10px);
+}
+
+.help__p:last-child {
+    margin-bottom: w(32px);
+}
+
+.help__ul {
+    margin-left: w(16px);
+}
+
+.help__li {
+    margin-bottom: w(24px);
+    line-height: w(25px);
+}
+
+.help__a {
+    color: rgba(0, 0, 0, 0.4);
+    border-bottom: w(1px) solid rgba(0, 0, 0, 0.4);
+
+    &:hover {
+        border-bottom: 0;
+    }
+}
+
+.plus {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.plus__span {
+    background-color: #c4c4c4;
+    display: block;
+    width: w(20px);
+    height: w(2px);
+    position: absolute;
+    right: w(50px);
+    transition: transform .3s ease;
+}
+
+.plus__span_col {
+    transform: rotate(90deg)
+}
+
+.help__img {
+    width: w(300px);
+    height: w(300px);
+    background-size: 100% 100%;
+}
+
+.help__img_one {
+    background-image: url(../../img/help/polo.png);
+}
+
+.help__img_two {
+    background-image: url(../../img/help/jeans.png)
+}
+
+.help__img_three {
+    background-image: url(../../img/help/ubka.png)
+}
+
+.help__img_four {
+    background-image: url(../../img/help/remen_bez_dyrok.png)
+}
+
+.help__img_five {
+    background-image: url(../../img/help/perchatka.png)
+}
+
+.help__img_six {
+    background-image: url(../../img/help/short.png)
+}
+
+.help__img_seven {
+    background-image: url(../../img/help/shirt.png)
+}
+
+.help__img_eight {
+    background-image: url(../../img/help/sweatshort_.png)
+}
+
+.help__h4 {
+    display: inline;
+}

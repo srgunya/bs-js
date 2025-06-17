@@ -1,0 +1,75 @@
+.plusMin {
+    margin-bottom: w(25px);
+    opacity: 0;
+    transition: opacity .25s linear;
+}
+
+.plusMin_anim {
+    opacity: 1;
+}
+
+.plusMin__block {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: w(56px);
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: w(4px);
+}
+
+.plusMin__block_min,
+.plusMin__block_plus {
+    width: w(56px);
+    height: 100%;
+    cursor: pointer;
+    transition: background-color .2s ease;
+    border-radius: w(4px);
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+}
+
+.plusMin__block_plus,
+.plusMin__block_min {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.plusMin_but {
+    width: w(20px);
+    height: w(20px);
+    background-size: cover;
+
+}
+
+.plusMin__block_min_img {
+    background-image: url(../../img/basket/minus.png)
+}
+
+.plusMin__block_plus_img {
+    background-image: url(../../img/basket/plus.png)
+}
+
+.plusMin__zakaz {
+    width: 100%;
+    height: w(48px);
+    background-color: black;
+    border-radius: w(4px);
+    transition: opacity .2s ease;
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: w(8px);
+
+    &:hover {
+        opacity: 0.8;
+    }
+}

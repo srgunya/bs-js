@@ -1,0 +1,68 @@
+.bord {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 w(100px);
+
+}
+
+.bord__block {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+    width: 20%;
+
+}
+
+.bord__char {
+    text-transform: uppercase;
+    font-size: w(24px);
+    margin-right: w(14px);
+}
+
+.bord__li {
+    cursor: pointer;
+    margin-bottom: w(14px);
+    height: w(20px);
+
+}
+
+.bord__li:last-child {
+    margin-bottom: w(70px);
+}
+
+.bord__a {
+    transition: opacity .3s ease;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: baseline;
+
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.bord__a_hide {
+    cursor: default;
+    color: rgba(0, 0, 0, 0.5);
+
+    &:hover {
+        opacity: inherit;
+    }
+
+}
+
+.bord__a_hide::after {
+    content: 'Скоро';
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: w(42px);
+    height: w(20px);
+    background-color: rgba(0, 0, 0, .05);
+    margin-left: w(10px);
+    font-size: w(10px);
+    color: black;
+    border-radius: w(4px);
+}

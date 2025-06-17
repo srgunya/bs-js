@@ -1,0 +1,46 @@
+.contactImg {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: w(64px);
+    padding: 0 w(50px);
+}
+
+.contactImg__block {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.contactImg__block:nth-child(1) {
+    margin-right: w(25px);
+}
+
+.contactImg__img {
+    margin-top: w(16px);
+    width: 100%;
+    height: w(697px);
+    background-image: url(../../img/contact/shop.jpg);
+    background-size: cover;
+    border-radius: w(4px);
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        .contactImg__shadow {
+            opacity: .2;
+        }
+    }
+}
+
+.contactImg__a {
+    margin-bottom: w(4px);
+}
+
+.contactImg__link {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.contactImg__p {
+    line-height: w(20px);
+}
